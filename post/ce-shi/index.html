@@ -1,165 +1,135 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>测试 | 潍坊联塑管业总代理</title>
 <meta name="description" content="联塑管道是联塑集团化学建材业下属的重点产业，目前共有以浙江联塑管道科技股份有限公司为基础的10大生产基地，营销网络更是遍布全国乃至全世界。
   作为“管道集成方案解决商”为宗旨，联塑管道一直将呵护城市发展和提高人们生活品质为宗旨，本着追求完美的精神，目前有10大管道系统、50多个系列，5000多个品种，在行业内推出Z-HOME系统，为您量身打造洁净、舒适、清新、活力、安全、温馨的家居环境。联塑管道已成为国内产品较齐全、规模较大的塑料管道专业生产企业之一。">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://lg1026.github.io/favicon.ico?v=1599151725281">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="https://lg1026.github.io/favicon.ico?v=1599563756742">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://lg1026.github.io/styles/main.css">
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://lg1026.github.io">潍坊联塑管业总代理</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post" class="menu">
-                产品
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/down" class="menu">
-                工程
-              </a>
-            
-          </li>
-        
-      </ul>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://lg1026.github.io">
+        <img class="avatar" src="https://lg1026.github.io/images/avatar.png?v=1599563756742" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://lg1026.github.io">
+        <h1 class="site-title">潍坊联塑管业总代理</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
     </div>
   </div>
-</nav>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>测试</h1>
-            <p class="article-meta">
-              2020-09-04
-              
-            </p>
-            
-            <div class="post-content">
-              <p>测试</p>
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/post" class="menu purple-link">
+            产品
+          </a>
+        
+      
+        
+          <a href="/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+        
+          <a href="/down" class="menu purple-link">
+            工程
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
 
-            </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
+
+      <div class="content-container">
+        <div class="post-detail">
           
+          <h2 class="post-title">测试</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-09-04</span>
+            
+          </div>
+          <div class="post-content">
+            <p>测试</p>
+
+          </div>
         </div>
+
         
       </div>
 
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://lg1026.github.io/images/avatar.png?v=1599151725281" class="no-responsive avatar">
-    <div class="text-muted">联塑管道是联塑集团化学建材业下属的重点产业，目前共有以浙江联塑管道科技股份有限公司为基础的10大生产基地，营销网络更是遍布全国乃至全世界。
+      
+
+      <div class="site-footer">
+  <div class="slogan">联塑管道是联塑集团化学建材业下属的重点产业，目前共有以浙江联塑管道科技股份有限公司为基础的10大生产基地，营销网络更是遍布全国乃至全世界。
   作为“管道集成方案解决商”为宗旨，联塑管道一直将呵护城市发展和提高人们生活品质为宗旨，本着追求完美的精神，目前有10大管道系统、50多个系列，5000多个品种，在行业内推出Z-HOME系统，为您量身打造洁净、舒适、清新、活力、安全、温馨的家居环境。联塑管道已成为国内产品较齐全、规模较大的塑料管道专业生产企业之一。</div>
-    <div class="social-container">
+  <div class="social-container">
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
-      
-    </div>
+    
   </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://lg1026.github.io/post/ce-shi/">测试</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-    </div>
-  </div>
-  <div class="paper">
-    <span class="site-footer-credits">
+  <span class="site-footer-credits">
     <a href="https://liansu.wfzdl.com">潍坊联塑管业总代理</a> . 技术支持.<a href="tel:15705425700">联系电话</a>
   </span> | <a class="rss" href="https://lg1026.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
 </div>
 
 
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
